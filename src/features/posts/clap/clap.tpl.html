@@ -1,0 +1,16 @@
+<div class="clap btn-group">
+  <button class="btn btn-success"
+      uib-tooltip="{{ $ctrl.tooltipText }}"
+      ng-click="$ctrl.clapOnPost()"
+      tooltip-popup-close-delay="200"
+      tooltip-placement="top"
+      tooltip-trigger="'none'"
+      tooltip-is-open="$ctrl.showTooltip">
+      Clap Me!
+  </button>
+  <button class="btn btn-danger"
+      ng-show="$ctrl.showRemoveClapButton"
+      ng-click="$ctrl.removeClap()">
+      Remove clap!
+  </button>
+</div>
